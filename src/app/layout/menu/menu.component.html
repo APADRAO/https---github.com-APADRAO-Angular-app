@@ -1,0 +1,20 @@
+<ng-container *ngFor="let item of menu">
+  <!--<div ngbDropdown class="d-inline-block p-3" #myDropGeneral="ngbDropdown">
+    <a id="dropDownMeny" ngbDropdownToggle>
+      <mat-icon> format_list_bulleted</mat-icon> {{item.menuName | uppercase}}
+    </a>
+    <ul ngbDropdownMenu class="dropdown-menu p-3" aria-labelledby="dropdownBasic1">
+      <li *ngFor="let itemMenu of item.listaMenu">
+
+        <a *ngIf="itemMenu.nmAtributo == 'href'" class="nav-link" href="{{itemMenu.nmLink}}" (click)="myDropGeneral.close();">
+          <mat-icon>{{itemMenu.icone}}</mat-icon>&nbsp;{{itemMenu.nome}}
+        </a>
+
+        <a  *ngIf="itemMenu.nmAtributo == 'routerLink'" class="nav-link" routerLink="{{itemMenu.nmLink}}" (click)="myDropGeneral.close();">
+          <mat-icon>{{itemMenu.icone}}</mat-icon>&nbsp;{{itemMenu.nome}}
+        </a>
+
+      </li>
+    </ul>
+  </div>-->
+</ng-container>

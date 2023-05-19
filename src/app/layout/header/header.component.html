@@ -1,0 +1,214 @@
+<div class="header m-1">
+  <div class="header-container">
+    <h2 class="p-2"><b>WebIT</b></h2>
+    <img class="p-2" style="height: auto;max-width: 20%;" src="assets/img/LogoDB.jpg" />
+    <nav class="navbar navbar-expand navbar-dark justify-content-center">
+      <a class="navbar-brand">{{ pageTitle }}</a>
+      <div class="container justify-content-center">
+        <div class="col">
+          <!-- <div ngbDropdown class="d-inline-block p-3" #myDropGeneral="ngbDropdown">
+            <a id="dropDownMeny" ngbDropdownToggle><mat-icon> format_list_bulleted</mat-icon> GENERAL</a>
+            <ul ngbDropdownMenu class="dropdown-menu p-3" aria-labelledby="dropdownBasic1">
+              <li>
+                <a class="nav-link"  href="RepasseContainer.aspx" (click)="myDropGeneral.close();">
+                  <mat-icon>backup</mat-icon>Repasse CTR
+                </a>
+              </li>
+              <li>
+                <a class="nav-link"  href="RedestPreAlert.aspx" (click)="myDropGeneral.close();">
+                  <mat-icon>desktop_mac</mat-icon>Redestinação / Pre-Alert-SSZ
+                </a>
+              </li>
+              <li>
+                <a class="nav-link"  href="ICMS.aspx" (click)="myDropGeneral.close();">
+                  <mat-icon>desktop_mac</mat-icon>Preenche ICMS
+                </a>
+              </li>
+              <li>
+                <a class="nav-link"  href="Encerra_ROBO_DI.aspx" (click)="myDropGeneral.close();">
+                  <mat-icon>desktop_mac</mat-icon>Encerra Robô LI/DI
+                </a>
+              </li>
+              <li>
+                <a class="nav-link"  href="Custeio/IntegraCusteio.aspx" (click)="myDropGeneral.close();">
+                  <mat-icon>backup</mat-icon>Integração Custeio
+                </a>
+              </li>
+              <li>
+                <a class="nav-link"  href="AcaoJudTXSisco.aspx" (click)="myDropGeneral.close();">
+                  <mat-icon>desktop_mac</mat-icon>Recalculo Judicial
+                </a>
+              </li>
+              <li>
+                <a class="nav-link"  href="Integracao_PO/IntegracaoPO.aspx" (click)="myDropGeneral.close();">
+                  <mat-icon>backup</mat-icon>Integração PO XLS
+                </a>
+              </li>
+              <li>
+                <a class="nav-link"  href="DWArquivos/DownloadArquiv.aspx?TB=1&PRC=0" (click)="myDropGeneral.close();">
+                  <mat-icon>download</mat-icon>Download Lote Arquivos
+                </a>
+              </li>
+              <li>
+                <a class="nav-link"  href="NfDataSul/NFEDataSul.aspx" (click)="myDropGeneral.close();">
+                  <mat-icon>download</mat-icon>NFE DataSul
+                </a>
+              </li>
+              <li>
+                <a class="nav-link"  href="DeParaNve/DeParaNVE.aspx" (click)="myDropGeneral.close();">
+                  <mat-icon>desktop_mac</mat-icon>DE>PARA NVE
+                </a>
+              </li>
+              <li>
+                <a class="nav-link"  href="UnidadeMedida/UnidadeMedidaDestaq.aspx" (click)="myDropGeneral.close();">
+                  <mat-icon>desktop_mac</mat-icon>Atua.Unid.Medida
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" routerLink="/dbsdigitallibrary" (click)="myDropGeneral.close();">
+                  <mat-icon>backup</mat-icon> DBS Digital Library
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" routerLink="/entrada-numerario" (click)="myDropGeneral.close();">
+                  <mat-icon>backup</mat-icon> Integração Numerário
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" routerLink="/custeio" (click)="myDropGeneral.close();">
+                  <mat-icon>backup</mat-icon> Integração Custeio
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" routerLink="/followli" (click)="myDropGeneral.close();">
+                  <mat-icon>desktop_mac</mat-icon> Follow Li
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" routerLink="/followup-pedido" (click)="myDropGeneral.close();">
+                  <mat-icon>desktop_mac</mat-icon> Follow Up Pedido
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" routerLink="/followup-processo" (click)="myDropGeneral.close();">
+                  <mat-icon>desktop_mac</mat-icon> Follow Up Processo
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" routerLink="/contacorrente" (click)="myDropGeneral.close();">
+                  <mat-icon>attach_money</mat-icon> Conta Corrente
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div ngbDropdown class="d-inline-block" #myDropClientes="ngbDropdown">
+            <a id="dropDownMeny dropdown-menu" ngbDropdownToggle><mat-icon>person_outline</mat-icon> CLIENTES</a>
+            <ul ngbDropdownMenu aria-labelledby="dropdownBasic1">
+
+              <li><a class="nav-link" href="/Zara/InditexIN.aspx" (click)="myDropClientes.close();"><mat-icon>backup</mat-icon> Entrada Inditex</a></li>
+              <li><a class="nav-link" href="/Zara/InditexOUT.aspx" (click)="myDropClientes.close();"><mat-icon>download</mat-icon> Saída Inditex</a></li>
+              <li><a class="nav-link" href="/Zara/ZaraNota.aspx" (click)="myDropClientes.close();">Nota ZARA</a></li>
+              <li><a class="nav-link" href="/Amazon/AmazonBita.aspx" (click)="myDropClientes.close();"><mat-icon>desktop_mac</mat-icon>AMZ - Integração Bita</a></li>
+              <li><a class="nav-link" href="/Amazon/AmazonNFOrigUpdate.aspx" (click)="myDropClientes.close();"><mat-icon>desktop_mac</mat-icon>AMZ - Orig/CEST NF IBroker</a></li>
+              <li><a class="nav-link" href="/Amazon/LimpaNota.aspx" (click)="myDropClientes.close();"><mat-icon>desktop_mac</mat-icon>AMZ - Limpa XML</a></li>
+              <li><a class="nav-link" href="/Amazon/BrokerDocs/BrokerDocsDownload.aspx" (click)="myDropClientes.close();"><mat-icon>desktop_mac</mat-icon>BrokerFile Docs</a></li>
+              <li><a class="nav-link" href="/Amazon/BrokerFile/UploadBrokerFile.aspx" (click)="myDropClientes.close();"><mat-icon>desktop_mac</mat-icon>Upload</a></li>
+              <li><a class="nav-link" href="/Amazon/BrokerFile/EnviaRetornoBrokerFile.aspx" (click)="myDropClientes.close();"><mat-icon>desktop_mac</mat-icon>Envio Revisão BrokerFile</a></li>
+              <li><a class="nav-link" href="/Amazon/BrokerFile/BrokerFileValidation.aspx" (click)="myDropClientes.close();"><mat-icon>desktop_mac</mat-icon>Validação</a></li>
+              <li><a class="nav-link" href="/Amazon/NF/AmazonNotaFiscal.aspx" (click)="myDropClientes.close();"><mat-icon>desktop_mac</mat-icon>Nota Fiscal</a></li>
+              <li><a class="nav-link" href="/Amazon/AllocationCost.aspx" (click)="myDropClientes.close();"><mat-icon>desktop_mac</mat-icon>AMZ - Cost Allocation</a></li>
+              <li><a class="nav-link" href="/Amazon/AmazonCustomCentral.aspx" (click)="myDropClientes.close();"><mat-icon>desktop_mac</mat-icon>AMZ - Integração Custom Central</a></li>
+              <li><a class="nav-link" href="/IntegracaoPolaris.aspx" (click)="myDropClientes.close();"><mat-icon>desktop_mac</mat-icon>Integração Polaris</a></li>
+              <li><a class="nav-link" href="/ImpactaCostFile.aspx" (click)="myDropClientes.close();"><mat-icon>desktop_mac</mat-icon>Impacta Arquivo de Custos</a></li>
+              <li><a class="nav-link" href="/Delaval.aspx" (click)="myDropClientes.close();"><mat-icon>desktop_mac</mat-icon>Delaval</a></li>
+              <li><a class="nav-link" href="/Benteler.aspx" (click)="myDropClientes.close();"><mat-icon>desktop_mac</mat-icon>Integrações Benteler</a></li>
+              <li><a class="nav-link" href="/AccellNF.aspx" (click)="myDropClientes.close();"><mat-icon>desktop_mac</mat-icon>Saida NF Accell</a></li>
+              <li><a class="nav-link" href="/IntegraBurberry.aspx" (click)="myDropClientes.close();"><mat-icon>desktop_mac</mat-icon>Gera Entrada Burberry</a></li>
+
+
+              <li>
+                <a class="nav-link" routerLink="/planoacaoapple" (click)="myDropClientes.close();">
+                  <mat-icon>desktop_mac</mat-icon> Apple - Plano de Ação
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" routerLink="/sfu" (click)="myDropClientes.close();">
+                  <mat-icon>backup</mat-icon> SFU - LVMH
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" routerLink="/guerbet-arquivo" (click)="myDropClientes.close();">
+                  <mat-icon>download</mat-icon> Guerbet - Arquivo de Saída
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" routerLink="/nfroche" (click)="myDropClientes.close();">
+                  <mat-icon>download</mat-icon> Roche - NF
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" routerLink="nfgrunn" (click)="myDropClientes.close();">
+                  <mat-icon>download</mat-icon> NFE - Grunn
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" routerLink="/nftecmatic" (click)="myDropClientes.close();">
+                  <mat-icon>download</mat-icon> NFE - Tecmatic
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" routerLink="/iwaki" (click)="myDropClientes.close();">
+                  <mat-icon>download</mat-icon> NFE - Iwaki
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" routerLink="/fataam" (click)="myDropClientes.close();">
+                  <mat-icon>download</mat-icon> Integração AAM
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" routerLink="/impacta" (click)="myDropClientes.close();">
+                  <mat-icon>download</mat-icon> Integração Impacta
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" routerLink="/siemens" (click)="myDropClientes.close();">
+                  <mat-icon>download</mat-icon> Integração Siemens
+                </a>
+              </li>
+              <li>
+                <a class="nav-link" routerLink="/caixalvmh" (click)="myDropClientes.close();">
+                  <mat-icon>download</mat-icon> Caixa LVMH
+                </a>
+              </li>
+            </ul>
+          </div> -->
+          <app-menu></app-menu>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="header-container">
+    <!--<div ngbDropdown class="d-inline-block" #myDropGeneral="ngbDropdown">
+      <a id="dropDownMenuUsuario" ngbDropdownToggle><mat-icon>person</mat-icon></a>
+      <ul id="ddUsuario" ngbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownBasic1">
+        <li>
+          <strong>Ambiente:</strong>
+          <p class="infotext">{{nomeAmbiente}}</p>
+        </li>
+        <li>
+          <strong>Nome do Usuário:</strong>
+          <p class="infotext">{{usuarioNome}}</p>
+        </li> 
+        <li>
+          <a class="btn btn-sm" routerLink="/recadastro-user" (click)="myDropGeneral.close();">Dados do Usuário >>></a>
+        </li> 
+        <mat-divider></mat-divider>
+        <li>
+          <button class="btn btn-danger btn-sm" (click)="logOut()">Sair</button>
+        </li>
+      </ul>
+    </div>-->
+  </div>
+</div>
+<app-titulo></app-titulo>

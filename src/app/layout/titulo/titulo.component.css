@@ -1,0 +1,14 @@
+h2 {
+    margin: 0px !important;
+  }
+
+.alert-config {
+  padding: 0.8rem 0.5rem 0.2rem 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.bg-dark-green {
+  background-color: #005F6A;
+  /* border-bottom: 1px solid #005F6A; */
+  color: #fff;
+}

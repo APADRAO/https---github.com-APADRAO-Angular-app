@@ -1,0 +1,42 @@
+<ng-template #modal>
+  <div class="modal-header">
+    <h5 class="modal-title">{{ modalConfig.modalTitle }}</h5>
+    <button
+      mat-raised-button
+      type="button"
+      name="cancelar"
+      class="btn-danger"
+      id="button-id-signup"
+      (click)="close()"
+    >
+      <!--<mat-icon>cancel</mat-icon>-->
+    </button>
+  </div>
+  <div class="modal-body">
+    <ng-template [ngTemplateOutlet]="templateRef">
+      <!--<app-lancamentos></app-lancamentos>-->
+    </ng-template>
+    <!-- <ng-container *ngTemplateOutlet="templateRef">
+      <app-lancamentos></app-lancamentos>
+    </ng-container> -->
+    <!-- <ng-content></ng-content> -->
+    <!-- <ng-template>
+      <app-lancamentos></app-lancamentos>
+    </ng-template> -->
+    <!-- <ng-template [ngTemplateOutlet]="templateRef" [ngTemplateOutletContext]="{$implicit: clienteBD}"></ng-template> -->
+  </div>
+  <div class="modal-footer">
+    <button
+      hidden
+      type="button"
+      class="btn btn-danger"
+      (click)="dismiss()"
+    >
+      {{ modalConfig.dismissButtonLabel }}
+    </button>
+    <!-- <button type="button"
+            class="btn btn-outline-primary"
+            (click)="close()">
+    </button> -->
+  </div>
+</ng-template>

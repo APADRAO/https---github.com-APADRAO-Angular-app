@@ -1,0 +1,38 @@
+{
+  "menus":[
+      {
+          "menuName":"Cliente",
+          "listaMenu":[
+              {
+                  "nome":"SFU - LVMH",
+                  "icone":"backup",
+                  "nmLink":"/sfu",
+                  "nmAtributo":"routerLink"
+              },
+              {
+                  "nome":"Integração Polaris",
+                  "icone":"download",
+                  "nmLink":"/IntegracaoPolaris.aspx",
+                  "nmAtributo":"href"
+              }
+          ]
+      },
+      {
+          "menuName":"Geral",
+          "listaMenu":[
+              {
+                  "nome":"FollowUp LI",
+                  "icone":"desktop_mac",
+                  "nmLink":"/followli",
+                  "nmAtributo":"routerLink"
+              },
+              {
+                  "nome":"Preenche ICMS",
+                  "icone":"desktop_mac",
+                  "nmLink":"/ICMS.aspx",
+                  "nmAtributo":"href"
+              }
+          ]
+      }
+  ]
+}
